@@ -1,0 +1,29 @@
+<!DOCTYPE htmI>
+<h3>Заполните параметры перед запуском тестирования</h3>
+<form action="/handler.php" method="post">
+ <label for="name">Имя тестировщика </label>
+ <input type="text" />
+ <div>
+  <br/>
+  <label for="type">Вид тестирования производительности </label>
+  <select>
+   <option>Нагрузочное</option>
+   <option>1</option>
+   <option>2</option>
+  </select>
+ </div>
+ <br/>
+ <label for="sripts">Тестовые сценарии </label><br/>
+ <input type="radio" value="Поиск документов" name="myRadio">Поиск документов<br/>
+ <input type="radio" value="Прием платежей" name="myRadio">Прием платежей<br/>
+ <input type="radio" value="Формирование отчетов" name="myRadio">Формирование отчетов
+ <div>
+  <br/>
+  <input type="checkbox" />Сохранить отчет о тестировании
+ </div>
+ <p>Примечание</p>
+ <textarea></textarea>
+ <p><a target= " _blank " href=index2.html>Отмена</a></p>
+</form>
+<hr/>
+<button type="submit" />Старт тестирования</button>
