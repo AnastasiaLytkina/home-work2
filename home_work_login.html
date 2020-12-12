@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>home_work_login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">success_login</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td></td>
+</tr>
+<tr><td>storeLocation</td><td>url_current_page<datalist><option>url_current_page</option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td>url_login_page</td>
+</tr>
+<tr><td>if</td><td>'${url_current_page}' !='${url_login_page}'<datalist><option>'${url_current_page}' !='${url_login_page}'</option><option>'{url_current_page}' !='{url_current_page}'</option><option>'${url_current_page}' !='${url_current_page}'</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=выход<datalist><option>link=выход</option></datalist></td><td></td>
+</tr>
+<tr><td>assertLocation</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>open</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option></datalist></td><td>Anastasia</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Войти']<datalist><option>//input[@value='Войти']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option></datalist></td><td>Zxc123</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Войти']<datalist><option>//input[@value='Войти']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=выход<datalist><option>link=выход</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyLocation</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3"> wrong_password</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option></datalist></td><td>Anastasia</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Войти']<datalist><option>//input[@value='Войти']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option></datalist></td><td>zxc123</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Войти']<datalist><option>//input[@value='Войти']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='main-container']/div/div/div/div/div[4]/p<datalist><option>//div[@id='main-container']/div/div/div/div/div[4]/p</option></datalist></td><td>Возможно, ваша учетная запись заблокирована, или введенное регистрационное имя/пароль неправильны.</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">wrong_login</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://academ-it.ru/mantisbt/login_page.php<datalist><option>https://academ-it.ru/mantisbt/login_page.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option></datalist></td><td>Anastasiya</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Войти']<datalist><option>//input[@value='Войти']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option></datalist></td><td>Zxc123</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Войти']<datalist><option>//input[@value='Войти']</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='main-container']/div/div/div/div/div[4]/p<datalist><option>//div[@id='main-container']/div/div/div/div/div[4]/p</option></datalist></td><td>Возможно, ваша учетная запись заблокирована, или введенное регистрационное имя/пароль неправильны.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
